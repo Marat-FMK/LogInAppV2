@@ -100,11 +100,10 @@
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="ELc-jb-1Sc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ecq-jf-0ym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="Cjo-yK-UIj" sceneMemberID="viewController">
+                <viewController id="Cjo-yK-UIj" customClass="WelcomeViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oX0-Tk-90b">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,6 +126,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Quite">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="quiteButtonPressed" destination="Cjo-yK-UIj" eventType="touchUpInside" id="UDQ-5t-gND"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E05-2E-dQq"/>
@@ -140,9 +142,14 @@
                             <constraint firstItem="iLo-w8-xKZ" firstAttribute="centerX" secondItem="E05-2E-dQq" secondAttribute="centerX" id="p8z-UN-5cW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="smileLabel" destination="iLo-w8-xKZ" id="zrb-pT-6DQ"/>
+                        <outlet property="welcomeLabel" destination="cyV-pi-wi6" id="Cxx-L0-hkG"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecq-jf-0ym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="4"/>
+            <point key="canvasLocation" x="804" y="4"/>
         </scene>
     </scenes>
     <resources>
