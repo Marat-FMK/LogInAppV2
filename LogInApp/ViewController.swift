@@ -50,7 +50,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func showName() {
-        showAlert(title: " OMG , do you know where you're going ?" , messege: "write -  Marat " )
+        showAlert(title: " OMG , do you know where you're going ?" ,
+                  messege: "write -  Marat " )
     }
     
     

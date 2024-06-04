@@ -23,8 +23,6 @@ class WelcomeViewController: UIViewController {
        }
 
     
-//    @IBAction func quiteButtonPressed() { dismiss(animated: true) }   // time 2-20-42 // completion clouser
-    
 }
     
 
