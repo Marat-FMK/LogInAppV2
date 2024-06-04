@@ -13,17 +13,20 @@ class ViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
    
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
     @IBAction func logInPasswordButton() {
-       
+        guard let name = nameTextField.text else { return }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let name = nameTextField.text else { return }
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.welcomeL = " Welcome, \(name)"
+    }
     
     @IBAction func showName() {
         let alert = UIAlertController(title: "OMG , do you know where you're going ?", message: "write - @ Marat @", preferredStyle: .alert)
