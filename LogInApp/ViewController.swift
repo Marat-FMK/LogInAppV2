@@ -24,11 +24,7 @@ class ViewController: UIViewController {
     @IBAction func logInPasswordButton() {
         if nameTextField.text != "Marat" || passwordTextField.text != "q" {
             
-            let alert = UIAlertController(title: "Pass or Login !!!", message: "write correct data", preferredStyle: .alert)
-            
-            let goodAction = UIAlertAction(title: "Good", style: .default)
-            alert.addAction(goodAction)
-            present(alert, animated: true)
+            showAlert(title: "Pass or Login !!!", messege:  "write correct data")
             passwordTextField.text = nil
         }
     }
